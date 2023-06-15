@@ -1,0 +1,98 @@
+/* Estilos para a barra lateral */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #1f2833;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  
+  .sidebar div {
+    background-color: #1f2833;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .sidebar div {
+    padding-top: 30px;
+  }
+  
+  .sidebar div img {
+    display: block;
+    margin: auto;
+    width: 150px;
+    filter: drop-shadow(2px 2px 6px rgba(255, 255, 255, 0.493));
+    object-fit: cover;
+    padding-bottom: 20%;
+  }
+  
+  .sidebar a {
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 16px;
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+    margin-left: 1em;
+  }
+  
+  .sidebar a svg {
+    margin-right: 0.6em;
+  }
+  
+  .sidebar a:hover {
+    background-color: #66fcf1;
+    color: #fff;
+  }
+  
+  .content {
+    margin-left: 200px;
+    padding: 1px 16px;
+  }
+  
+  /* Estilos para dispositivos móveis */
+  @media screen and (max-width: 700px) {
+    div.content {
+      margin-left: 0;
+    }
+  
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .sidebar a {
+      float: none;
+      margin: 10px 0;
+    }
+  
+    .sidebar div {
+      padding: 10px 0;
+    }
+  
+    .sidebar div img {
+      width: 50px;
+      padding-bottom: 0;
+      margin-right: 0;
+    }
+  
+    .sidebar a svg {
+      display: none;
+    }
+  
+    .content {
+      padding: 1px 55px;
+    }
+  }
